@@ -1,0 +1,220 @@
+/* Styles CSS pour la navbar */
+.navbar {
+    background-color: #fff; /* Couleur de fond de la navbar */
+    width: 100%; /* Prend toute la largeur de la page */
+    height: 60px; /* Hauteur de la navbar */
+    position: fixed; /* Fixe la navbar en haut de la page */
+    top: 0; /* Place la navbar au sommet de la page */
+    left: 0; /* Aligne la navbar sur la gauche */
+    z-index: 1000; /* Assure que la navbar est au-dessus du reste du contenu */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère pour la navbar */
+}
+
+/* Styles pour le titre "matcha tea" dans la navbar */
+.navbar h1 {
+    margin: 0;
+    padding: 1px 0;
+    color: #098e1877; /* Couleur du texte de la navbar */
+    font-size: 50px; /* Taille du texte dans la navbar */
+    font-family: Brush Script MT, Brush Script Std, cursive; /* Police de caractère */
+    text-align: center; /* Centre le texte horizontalement */
+    width: 100%; /* Occupe toute la largeur de la navbar */
+}
+
+/* Styles pour les images dans la navbar */
+.navbar img {
+    height: 40px; /* Hauteur de l'image */
+    margin-top: 5px; /* Marge au-dessus de l'image pour l'aligner avec le texte */
+}
+
+/* Styles pour l'image "thé.png" */
+.img-the {
+    position: absolute; /* Position absolue par rapport à son conteneur */
+    top: 50%; /* Positionne l'image au milieu verticalement */
+    left: 30px; /* Décalage de 30px depuis la gauche */
+    transform: translateY(-70%); /* Ajuste la position pour centrer l'image verticalement */
+    width: 60px; /* Largeur de l'image */
+    height: 90px; /* Hauteur ajustée automatiquement pour conserver les proportions */
+}
+
+/* Styles pour l'image "chauve-souris.png" */
+.img-chauve-souris {
+    position: absolute; /* Position absolue par rapport à son conteneur */
+    top: 50%; /* Positionne l'image au milieu verticalement */
+    right: 30px; /* Décalage de 30px depuis la droite */
+    transform: translateY(-50%); /* Ajuste la position pour centrer l'image verticalement */
+    width: 60px; /* Largeur de l'image */
+    height: 50px; /* Hauteur ajustée automatiquement pour conserver les proportions */
+}
+
+/* Styles CSS pour le corps */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #4e4c4c82; /* Couleur de fond grise pour le corps */
+}
+
+/* Styles CSS pour la navbar latérale gauche */
+.sidebar {
+    background-color: #9a9898; /* Couleur de fond de la navbar latérale */
+    width: 150px; /* Largeur de la navbar latérale */
+    height: calc(100vh - 60px); /* Hauteur de la navbar latérale (100% de la hauteur de la fenêtre moins la hauteur de la navbar blanche) */
+    position: fixed; /* Fixe la navbar latérale à la gauche de la page */
+    top: 60px; /* Déplace la navbar latérale en dessous de la navbar blanche */
+    left: 0; /* Aligne la navbar latérale sur la gauche */
+    z-index: 1000; /* Assure que la navbar latérale est au-dessus du reste du contenu */
+    display: flex; /* Utilisation de Flexbox */
+    flex-direction: column; /* Affiche les éléments en colonne */
+}
+
+/* Styles pour le contenu de la navbar latérale (par exemple, des liens ou des icônes) */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 50px;
+    writing-mode: vertical-lr; /* Affiche le texte verticalement de haut en bas */
+    text-align: center; /* Centre le texte horizontalement */
+    font-size: 20px; /* Taille du texte dans la navbar latérale */
+}
+
+.sidebar ul li a {
+    color: #fff; /* Couleur du texte de la navbar latérale */
+    text-decoration: none;
+}
+
+/* Styles pour les liens au survol dans la barre latérale */
+.sidebar ul li a:hover {
+    color: #0c0c0c; /* Couleur du texte au survol */
+}
+
+/* Styles pour le contenu principal (décalage vers la droite pour éviter que le contenu ne soit caché sous la navbar latérale) */
+.main-content {
+    margin-left: 80px; /* Décale le contenu principal vers la droite pour éviter la superposition avec la navbar latérale */
+}
+
+/* Styles CSS pour la navbar en footer */
+.footer-navbar {
+    background-color: #fff; /* Couleur de fond de la navbar en footer */
+    width: calc(100% - 150px); /* Largeur de la navbar en footer (100% de la largeur de la page moins la largeur de la navbar latérale) */
+    height: 300px; /* Hauteur de la navbar en footer */
+    position: fixed; /* Fixe la navbar en bas de la page */
+    bottom: 0; /* Place la navbar en bas de la page */
+    left: 150px; /* Décale la navbar de la largeur de la navbar latérale */
+    z-index: 1000; /* Assure que la navbar en footer est au-dessus du reste du contenu */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère pour la navbar en footer */
+}
+
+/* Styles pour la liste de coordonnées dans le footer */
+.footer-coordinates {
+    float: right; /* Alignement à droite */
+    margin-left: 40px; /* Marge à gauche pour séparer des autres éléments */
+}
+
+/* Styles pour la liste de navigation dans le footer */
+.footer-navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 30px 40px 0; /* Marge sur le dessus et les côtés */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+/* Styles pour la liste de coordonnées dans le footer */
+.footer-coordinates {
+    float: right; /* Alignement à droite */
+    margin-right: 20px; /* Marge à gauche pour séparer des autres éléments */
+}
+
+.footer-coordinates h2 {
+    font-weight: bold; /* Texte en gras */
+    margin-right: 30px;
+}
+
+.footer-coordinates p {
+    margin: 0; /* Supprime la marge par défaut */
+}
+
+/* Styles pour la liste de navigation dans le footer */
+.footer-navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 30px 40px 0; /* Marge sur le dessus et les côtés */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+/* Styles pour chaque élément de la liste de navigation dans le footer */
+.footer-navbar ul li {
+    display: block; /* Affiche chaque élément de la liste en tant que bloc */
+    margin-bottom: 10px; /* Marge en bas de chaque élément pour les séparer */
+    font-weight: bold; /* Texte en gras */
+}
+
+.footer-navbar ul li:first-child {
+    margin-left: 0;
+}
+
+.footer-navbar ul li a {
+    text-decoration: none;
+    color: #333; /* Couleur du texte de la navbar en footer */
+    font-size: 16px; /* Taille du texte dans la navbar latérale */
+}
+
+.footer-navbar ul li a:hover {
+    color: #666; /* Couleur du texte au survol de la navbar en footer */
+}
+
+/* Ajout de styles pour le texte au centre du footer */
+.footer-text-center {
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    transform: translate(-50%, 50%);
+    font-size: 18px;
+    color: #333;
+}
+
+/* Ajout de styles pour le rectangle gris centré au milieu du footer */
+.footer-rectangle {
+    position: absolute;
+    top: 45%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    width: 800px; /* Largeur du rectangle */
+    height:230px; /* Hauteur du rectangle */
+    background-color: #dcd9d951; /* Couleur du rectangle */
+}
+
+/* Styles pour le contenu à l'intérieur du rectangle */
+.rectangle-content {
+    text-align: center; /* Centrer le texte horizontalement */
+    padding: 20px; /* Ajouter un peu de marge à l'intérieur du rectangle */
+}
+
+/* Styles pour le texte à l'intérieur du rectangle */
+.rectangle-content p {
+    font-size: 20px; /* Taille du texte */
+    font-weight: bold;
+    color: black; /* Couleur du texte */
+}
+
+/* Styles pour le bouton à l'intérieur du rectangle */
+.rectangle-content button {
+    background-color: #9c9f9c; /* Couleur de fond du bouton */
+    border: none; /* Supprime la bordure du bouton */
+    color: rgb(10, 9, 9); /* Couleur du texte du bouton */
+    padding: 10px 20px; /* Ajoute un peu de marge intérieure */
+    text-align: center; /* Centrer le texte horizontalement */
+    text-decoration: none; /* Supprime le soulignement du texte */
+    display: inline-block; /* Affiche le bouton en ligne */
+    font-size: 16px; /* Taille du texte */
+    border-radius: 5px; /* Rayon des coins du bouton */
+    cursor: pointer; /* Curseur de la souris en forme de main au survol */
+}
+
+/* Styles pour le bouton au survol */
+.rectangle-content button:hover {
+    background-color: #ffffff; /* Couleur de fond du bouton au survol */
+}

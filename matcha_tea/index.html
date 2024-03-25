@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="matcha1.css">  
+</head>
+<body>
+
+    <header class="navbar">
+        <img src="the.png" alt="Thé" class="img-the">
+        <h1>Matcha Tea</h1>
+        <img src="chauve-souris.png" alt="Chauve-souris" class="img-chauve-souris">
+    </header>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Vente</a></li>
+            <li><a href="histoire.html">Histoire</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <main class="main-content">
+        <!-- Carrousel -->
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide"><img src="matcha1.png" alt="Slide 1"></div>
+                <div class="slide"><img src="matcha2.png" alt="Slide 2"></div>
+                <div class="slide"><img src="matcha3.png" alt="Slide 3"></div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+        <!-- Fin du carrousel -->
+    </main>
+
+    <br>
+
+    <!-- Texte en dessous du carrousel -->
+    <p class="description-text">Découvrez l'histoire de notre matcha tea ainsi que ses bienfaits</p>
+
+    <footer class="footer-navbar">
+        <div class="footer-coordinates">
+            <h2>Coordonnées</h2>
+            <p>8 rue d'Hozier</p>
+            <p>13001</p>
+            <p>Marseille</p>
+        </div>
+        <ul>
+            <li><a href="#">Navigation</a></li>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="histoire.html">Histoire</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Vente</a></li>
+            <li><a href="#">Contact</a></li>
+            <!-- Ajoutez d'autres éléments de menu selon vos besoins -->
+        </ul>
+        <div class="footer-rectangle">
+            <div class="rectangle-content">
+                <p>Bonne dégustation!</p>
+                <button>Connexion</button>
+                <p class="signup-text">Pas de compte? Inscrivez-vous</p> <!-- Nouveau texte ajouté -->
+            </div>
+        </div>
+        <div class="footer-text-center">La Plateforme_2024</div>
+    </footer>
+
+    <!-- JavaScript pour le carrousel -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        document.querySelector('.next').addEventListener('click', function() {
+            plusSlides(1);
+        });
+
+        document.querySelector('.prev').addEventListener('click', function() {
+            plusSlides(-1);
+        });
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
